@@ -28,8 +28,8 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Inherit Lineage product configuration
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 LINEAGE_BUILDTYPE := RELEASE
 
